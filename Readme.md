@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Vladimir Rurik](https://up.htmlacademy.ru/htmlcss/20/user/664207).
-* Наставник: `Неизвестно`.
+* Наставник: [Антон Попов](https://up.htmlacademy.ru/htmlcss/20/user/78239).
 
 ---
 
