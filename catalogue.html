@@ -4,19 +4,29 @@
     <meta charset="utf-8">
     <title>Глейси > Каталог > Сливочное мороженое</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/interaction.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/slider.css">
+    <link rel="stylesheet" type="text/css" href="css/promotion.css">
+    <link rel="stylesheet" type="text/css" href="css/product.css">
+    <link rel="stylesheet" type="text/css" href="css/info-news-contact.css">
+    <link rel="stylesheet" type="text/css" href="css/shopping-cart.css">
+    <link rel="stylesheet" type="text/css" href="css/breadcrumbs-filter.css">
+    <link rel="stylesheet" type="text/css" href="css/pagination-footer.css">
   </head>
-  <body class="bg">
+  <body class="background">
     <header class="container">
       <nav class="header-nav">
-        <a class="logo">
+        <a class="logo" href="index.html" title="На главную страницу"></a>
           <img src="img/logo/gllacy.svg" width="154" height="64" alt="Глейси лого">
         </a>
         <ul class="menu-nav">
-          <li class="menu-item">
+          <li class="menu-item menu-item-current">
             <a>Каталог</a>
             <ul class="sub-menu">
               <li class="sub-menu__item sub-menu__item--bold"><a href="#">Новинки</a></li>
-              <li class="sub-menu__item sub-menu__item--current"><a href="catalog.html">Сливочное</a></li>
+              <li class="sub-menu__item sub-menu__item--current"><a>Сливочное</a></li>
               <li class="sub-menu__item"><a href="#">Щербеты</a></li>
               <li class="sub-menu__item"><a href="#">Фруктовый лед</a></li>
               <li class="sub-menu__item"><a href="#">Мелорин</a></li>
@@ -26,9 +36,9 @@
           <li class="menu-item"><a href="#">О Компании</a></li>
         </ul>
         <ul class="user-nav">
-          <li class="user-nav-item">
+          <li class="user-nav-item search-form">
             <a class="user-nav-btn" href="#search"><span class="visually-hidden">Поиск</span></a>
-            <form class="popup-window" action="https://echo.htmlacademy.ru" method="get" target="_blank">
+            <form class="popup-form" action="https://echo.htmlacademy.ru" method="get" target="_blank">
               <input id="search-field" class="field" type="text" name="search-string" placeholder="Что ищем?" required>
               <p class="form-field">
                 <label for="search-field">Что ищем?</label>
@@ -36,9 +46,9 @@
               </p>
             </form>
           </li>
-          <li class="user-nav-item">
+          <li class="user-nav-item login-form">
             <a class="user-nav-btn" href="#login">Вход</a>
-            <form class="popup-window" action="https://echo.htmlacademy.ru" method="post" target="_blank">
+            <form class="popup-form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
               <p class="form-field">
                 <label for="login-mail">Электронная почта</label>
                 <input id="login-mail" class="field" type="text" name="login-mail" required>
@@ -56,10 +66,10 @@
               </div>
             </form>
           </li>
-          <li class="user-nav-item">
-              <a class="user-nav-btn basket-not-empty" href="#basket">2 товара</a>
-              <div class="basket popup-window">
-                <table class="basket-table">
+          <li class="user-nav-item shopping-cart-nav">
+              <a class="user-nav-btn shopping-cart-not-empty" href="#shopping-cart">2 товара</a>
+              <div class="shopping-cart popup-window">
+                <table class="shopping-cart-table">
                   <thead class="visually-hidden">
                     <tr>
                       <th>Удалить</th>
@@ -71,31 +81,31 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td class="basket-item-delete">
+                      <td class="shopping-cart-item-delete">
                         <button><span class="visually-hidden">Удалить</span></button>
                       </td>
-                      <td class="basket-item-img">
-                        <img src="img/product/basket-ice-cream-1.png" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                      <td class="shopping-cart-item-img">
+                        <img src="img/product/shopping-cart-ice-cream-1.png" width="33" height="33" alt="Пломбир с апельсиновым джемом">
                       </td>
-                      <td class="basket-item-name">Пломбир с апельсиновым джемом</td>
-                      <td class="basket-item-price-per-kilo">1,5 кг × <span>200 руб.</span></td>
-                      <td class="basket-item-price">300 руб.</td>
+                      <td class="shopping-cart-item-name">Пломбир с апельсиновым джемом</td>
+                      <td class="shopping-cart-item-price-per-kilo">1,5 кг × <span>200 руб.</span></td>
+                      <td class="shopping-cart-item-price">300 руб.</td>
                     </tr>
                     <tr>
-                      <td class="basket-item-delete">
+                      <td class="shopping-cart-item-delete">
                         <button><span class="visually-hidden">Удалить</span></button>
                       </td>
-                      <td class="basket-item-img">
-                        <img src="img/product/basket-ice-cream-3.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                      <td class="shopping-cart-item-img">
+                        <img src="img/product/shopping-cart-ice-cream-3.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
                       </td>
-                      <td class="basket-item-name">Клубничный пломбир с присыпкой из белого шоколада</td>
-                      <td class="basket-item-price-per-kilo">1,5 кг × <span>300 руб.</span></td>
-                      <td class="basket-item-price">450 руб.</td>
+                      <td class="shopping-cart-item-name">Клубничный пломбир с присыпкой из белого шоколада</td>
+                      <td class="shopping-cart-item-price-per-kilo">1,5 кг × <span>300 руб.</span></td>
+                      <td class="shopping-cart-item-price">450 руб.</td>
                     </tr>
                   </tbody>
                   <tfoot>
                     <tr>
-                      <td class="basket-item-total" colspan="5">Итого: 750 руб.</td>
+                      <td class="shopping-cart-item-total" colspan="5">Итого: 750 руб.</td>
                     </tr>
                   </tfoot>
                 </table>
@@ -257,7 +267,7 @@
         </footer>
       </section>
     </main>
-    <footer class="container">
+    <footer class="page-footer container">
       <div class="social-media">
         <a class="social-twitter" href="#" target="_blank"><span class="visually-hidden">Мы в Twitter</span></a>
         <a class="social-instagram" href="#" target="_blank"><span class="visually-hidden">Мы в Instagram</span></a>

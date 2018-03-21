@@ -1,0 +1,131 @@
+
+.slider {
+  position: relative;
+}
+
+.ice-cream-1:checked ~ .bg {
+  background-color: #849d8f;
+  background-image: radial-gradient( rgb(207, 246, 225) 20px,
+  rgba(207, 246, 225, 0.75) 150px,
+  rgba(207, 246, 225, 0.5) 250px,
+  rgba(207, 246, 225, 0.38) 310px,
+  rgba(207, 246, 225, 0.15) 420px,
+  transparent 522px);
+}
+
+.ice-cream-2:checked ~ .bg {
+  background-color: #8996a6;
+  background-image: radial-gradient( rgb(214, 235, 252) 20px,
+  rgba(214, 235, 252, 0.75) 150px,
+  rgba(214, 235, 252, 0.5) 250px,
+  rgba(214, 235, 252, 0.38) 310px,
+  rgba(214, 235, 252, 0.15) 420px,
+  transparent 522px);
+}
+
+.ice-cream-3:checked ~ .bg {
+  background-color: #9d8b84;
+  background-image: radial-gradient( rgb(250, 228, 219) 20px,
+  rgba(250, 228, 219, 0.75) 150px,
+  rgba(250, 228, 219, 0.5) 250px,
+  rgba(250, 228, 219, 0.38) 310px,
+  rgba(250, 228, 219, 0.15) 420px,
+  transparent 522px);
+}
+
+.slides-controls {
+  position: absolute;
+  bottom: 56px;
+  left: 0;
+}
+
+.slide-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  cursor: pointer;
+}
+
+.slide-label-2 {
+  left: 29px;
+}
+
+.slide-label-3 {
+  left: 58px;
+}
+
+.slide-label::before {
+  content: "";
+  position: relative;
+
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  margin-right: 8px;
+
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}
+
+.slide-label:focus,
+.ice-cream-1:checked ~ .bg .slide-label-1::before,
+.ice-cream-2:checked ~ .bg .slide-label-2::before,
+.ice-cream-3:checked ~ .bg .slide-label-3::before {
+  background-color: #ffffff;
+}
+
+.slide-label:hover::before {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.slides {
+  margin: 0 0 1px;
+}
+
+.slide-item {
+  position: relative;
+
+  display: none;
+  width: 687px;
+  margin: 0 auto;
+  padding: 311px 0 40px;
+
+  text-align: center;
+}
+
+.ice-cream-1:checked ~ .bg .slide-1,
+.ice-cream-2:checked ~ .bg .slide-2,
+.ice-cream-3:checked ~ .bg .slide-3 {
+  display: block;
+}
+
+.slide-item img {
+  position: absolute;
+  top: 4px;
+  left: 20px;
+}
+
+.slide-item b {
+  position: relative;
+
+  display: block;
+  width: 678px;
+  margin: 0 auto 33px;
+
+  font-size: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.slide-item .btn {
+  position: relative;
+
+  padding: 7px 40px 12px;
+
+  font-size: 32px;
+  line-height: 44px;
+  text-shadow: 2px 2px 5px rgba(160, 32, 11, 0.76);
+
+  border-radius: 33px;
+}

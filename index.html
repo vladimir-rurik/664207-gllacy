@@ -4,20 +4,30 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/interaction.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/slider.css">
+    <link rel="stylesheet" type="text/css" href="css/promotion.css">
+    <link rel="stylesheet" type="text/css" href="css/product.css">
+    <link rel="stylesheet" type="text/css" href="css/info-news-contact.css">
+    <link rel="stylesheet" type="text/css" href="css/shopping-cart.css">
+    <link rel="stylesheet" type="text/css" href="css/breadcrumbs-filter.css">
+    <link rel="stylesheet" type="text/css" href="css/pagination-footer.css">
   </head>
   <body>
     <div class="background">
-      <header class="container">
+      <header class="top-header container">
         <nav class="header-nav">
           <a class="logo">
             <img src="img/logo/gllacy.svg" width="154" height="64" alt="Глейси лого">
           </a>
           <ul class="menu-nav">
             <li class="menu-item">
-              <a href="catalog.html">Каталог</a>
+              <a href="catalogue.html">Каталог</a>
               <ul class="sub-menu">
                 <li class="sub-menu__item submenu__item--bold"><a href="#">Новинки</a></li>
-                <li class="sub-menu__item"><a href="catalog.html">Сливочное</a></li>
+                <li class="sub-menu__item"><a href="catalogue.html">Сливочное</a></li>
                 <li class="sub-menu__item"><a href="#">Щербеты</a></li>
                 <li class="sub-menu__item"><a href="#">Фруктовый лед</a></li>
                 <li class="sub-menu__item"><a href="#">Мелорин</a></li>
@@ -27,9 +37,9 @@
             <li class="menu-item"><a href="#">О Компании</a></li>
           </ul>
           <ul class="user-nav">
-            <li class="user-nav-item">
+            <li class="user-nav-item search-form">
               <a class="user-nav-btn" href="#search"><span class="visually-hidden">Поиск</span></a>
-              <form class="search-form" action="https://echo.htmlacademy.ru" method="get" target="_blank">
+              <form class="popup-form" action="https://echo.htmlacademy.ru" method="get" target="_blank">
                 <input id="search-field" class="field" type="text" name="search-string" placeholder="Что ищем?" required>
                 <p class="form-field">
                   <label for="search-field">Что ищем?</label>
@@ -37,9 +47,9 @@
                 </p>
               </form>
             </li>
-            <li class="user-nav-item">
+            <li class="user-nav-item login-form">
               <a class="user-nav-btn" href="#login">Вход</a>
-              <form class="login-form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
+              <form class="popup-form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
                 <p class="form-field">
                   <label for="login-mail">Электронная почта</label>
                   <input id="login-mail" class="field" type="text" name="login-mail" required>
@@ -57,7 +67,7 @@
                 </div>
               </form>
             </li>
-            <li class="user-nav-item basket">
+            <li class="user-nav-item shopping-cart-nav">
               <span class="visually-hidden">Корзина</span>
               <a class="user-nav-btn no-href">Пусто</a>
             </li>
@@ -90,11 +100,11 @@
               </li>
             </ul>
             <div class="slide-controls">
-              <label for="ice-cream-1" class="slide-label"><span class="visually-hidden">Слайд 1</span></label>
+              <label for="ice-cream-1" class="slide-label slide-label-1"><span class="visually-hidden">Слайд 1</span></label>
               <input type="radio" class="ice-cream-1 visually-hidden" id="ice-cream-1" name="ice-cream-slide-1" checked>
-              <label for="ice-cream-2" class="slide-label"><span class="visually-hidden">Слайд 2</span></label>
+              <label for="ice-cream-2" class="slide-label slide-label-2"><span class="visually-hidden">Слайд 2</span></label>
               <input type="radio" class="ice-cream-2 visually-hidden" id="ice-cream-2" name="ice-cream-slide-2">
-              <label for="ice-cream-3" class="slide-label"><span class="visually-hidden">Слайд 3</span></label>
+              <label for="ice-cream-3" class="slide-label slide-label-3"><span class="visually-hidden">Слайд 3</span></label>
               <input type="radio" class="ice-cream-3 visually-hidden" id="ice-cream-3" name="ice-cream-slide-3">
             </div>
           </section>
@@ -185,7 +195,7 @@
           </div>
         </section>
       </main>
-      <footer class="container">
+      <footer class="page-footer container">
         <div class="social-media">
           <a class="social-twitter" href="#" target="_blank"><span class="visually-hidden">Мы в Twitter</span></a>
           <a class="social-instagram" href="#" target="_blank"><span class="visually-hidden">Мы в Instagram</span></a>

@@ -1,0 +1,63 @@
+
+.promotion {
+  display: flex;
+  justify-content: space-between;
+}
+
+.promotion div {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 560px;
+  min-height: 229px;
+  padding: 14px 20px 24px;
+
+  border-radius: 16px;
+}
+
+.raspberry-H {
+  background: url("../img/background/raspberry.jpg") no-repeat #6e1426;
+  background-size: cover;
+}
+
+.chocolate-promotion {
+  background: url("../img/background/chocolate.jpg") no-repeat #452a1e;
+  background-size: cover;
+}
+
+.promotion h3 {
+  margin: 0 0 16px;
+
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.chocolate-promotion h3 {
+  margin-bottom: 15px;
+}
+
+.promotion p {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.promotion .btn {
+  align-self: flex-end;
+  margin-top: auto;
+  margin-right: 1px;
+
+  border-radius: 22px;
+}
+
+.raspberry-promotion .btn {
+  padding: 9px 24px 12px 22px;
+}
+
+.chocolate-promotion .btn {
+  padding: 8px 21px 13px 22px;
+}
