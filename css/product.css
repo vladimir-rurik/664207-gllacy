@@ -79,7 +79,7 @@
   font-size: 30px;
 }
 
-.product-description {
+.product-link {
   margin: 22px 5px 0;
 
   font-weight: 500;
@@ -87,13 +87,13 @@
   text-align: center;
 }
 
-.product-description a {
+.product-link a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.product-description a:hover,
-.product-description a:focus,
-.product-description a:active {
+.product-link a:hover,
+.product-link a:focus,
+.product-link a:active {
   color: #e84d37;
 
   border-bottom: 1px solid rgba(236, 89, 60, 0.3);

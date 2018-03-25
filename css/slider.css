@@ -3,7 +3,7 @@
   position: relative;
 }
 
-.ice-cream-1:checked ~ .bg {
+.ice-cream-1:checked ~ .background {
   background-color: #849d8f;
   background-image: radial-gradient( rgb(207, 246, 225) 20px,
   rgba(207, 246, 225, 0.75) 150px,
@@ -13,7 +13,7 @@
   transparent 522px);
 }
 
-.ice-cream-2:checked ~ .bg {
+.ice-cream-2:checked ~ .background {
   background-color: #8996a6;
   background-image: radial-gradient( rgb(214, 235, 252) 20px,
   rgba(214, 235, 252, 0.75) 150px,
@@ -23,7 +23,7 @@
   transparent 522px);
 }
 
-.ice-cream-3:checked ~ .bg {
+.ice-cream-3:checked ~ .background {
   background-color: #9d8b84;
   background-image: radial-gradient( rgb(250, 228, 219) 20px,
   rgba(250, 228, 219, 0.75) 150px,
@@ -33,7 +33,7 @@
   transparent 522px);
 }
 
-.slides-controls {
+.slider-control {
   position: absolute;
   bottom: 56px;
   left: 0;
@@ -69,9 +69,9 @@
 }
 
 .slide-label:focus,
-.ice-cream-1:checked ~ .bg .slide-label-1::before,
-.ice-cream-2:checked ~ .bg .slide-label-2::before,
-.ice-cream-3:checked ~ .bg .slide-label-3::before {
+.ice-cream-1:checked ~ .background .slide-label-1::before,
+.ice-cream-2:checked ~ .background .slide-label-2::before,
+.ice-cream-3:checked ~ .background .slide-label-3::before {
   background-color: #ffffff;
 }
 
@@ -94,9 +94,9 @@
   text-align: center;
 }
 
-.ice-cream-1:checked ~ .bg .slide-1,
-.ice-cream-2:checked ~ .bg .slide-2,
-.ice-cream-3:checked ~ .bg .slide-3 {
+.ice-cream-1:checked ~ .background .slide-1,
+.ice-cream-2:checked ~ .background .slide-2,
+.ice-cream-3:checked ~ .background .slide-3 {
   display: block;
 }
 

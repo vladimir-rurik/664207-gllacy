@@ -103,6 +103,18 @@
   cursor: pointer;
 }
 
+/* remove a drop down arrow from the select control */
+.filter-category-options {
+  /*for chrome*/
+  -webkit-appearance: none;
+  /*for firefox*/
+     -moz-appearance: none;
+}
+/*for IE10+*/
+.filter-category-options::-ms-expand {
+  display: none;
+}
+
 .filter-category-options:hover,
 .filter-category-options:focus {
   color: #323232;

@@ -18,15 +18,15 @@
 }
 
 .modal-feedback form {
-  position: relative;
+  position: fixed;
+  top: 50%;
+  left: 50%;
 
-  width: 478px;
-  margin: auto;
-  margin-top: 336px;
   padding: 16px 25px 27px;
 
   background-color: #f8f7f4;
   border-radius: 10px;
+  transform: translate( -50%, -50%);
 
   animation: bounce 0.6s;
 }
@@ -74,7 +74,7 @@
 }
 
 .modal-close::before {
-  content: url("../img/icons/close.svg");
+  content: url("../img/icon/close.svg");
 
   display: inline-block;
   width: 35px;

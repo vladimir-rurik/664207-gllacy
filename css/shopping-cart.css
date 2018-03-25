@@ -48,7 +48,7 @@
 }
 
 .shopping-cart-item-delete button::before {
-  content: url("../img/icons/close.svg");
+  content: url("../img/icon/close.svg");
 
   display: inline-block;
   width: 11px;

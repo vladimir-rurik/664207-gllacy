@@ -1,9 +1,3 @@
-.top-header {
-  position: relative;
-
-  display: flex;
-}
-
 .header-nav {
   display: flex;
   width: 100%;
@@ -375,8 +369,8 @@
 
 .header-info {
   position: absolute;
-  top: 58px;
   right: 0;
+  bottom: -40px;
   z-index: 1;
 
   font-weight: 700;

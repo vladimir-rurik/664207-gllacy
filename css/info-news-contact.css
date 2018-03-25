@@ -45,7 +45,7 @@
 }
 
 .supply-info::before {
-  content: url("../img/icon/suply-info.svg");
+  content: url("../img/icon/supply-info.svg");
 }
 
 .made-from-info::before {
@@ -131,7 +131,7 @@
   align-items: flex-start;
 }
 
-.news-subscribe .form-group {
+.news-subscribe .form-field {
   flex-grow: 1;
   margin: 0 12px 10px 0;
 }

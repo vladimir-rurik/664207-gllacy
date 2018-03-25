@@ -17,8 +17,11 @@
     <link rel="stylesheet" type="text/css" href="css/modal.css">
   </head>
   <body>
+    <input type="radio" class="ice-cream-1 visually-hidden" id="ice-cream-1" name="ice-cream-slide-1" checked>
+    <input type="radio" class="ice-cream-2 visually-hidden" id="ice-cream-2" name="ice-cream-slide-2">
+    <input type="radio" class="ice-cream-3 visually-hidden" id="ice-cream-3" name="ice-cream-slide-3">
     <div class="background">
-      <header class="top-header container">
+      <header class="container">
         <nav class="header-nav">
           <a class="logo">
             <img src="img/logo/gllacy.svg" width="154" height="64" alt="Глейси лого">
@@ -41,8 +44,8 @@
             <li class="user-nav-item search-form">
               <a class="user-nav-btn" href="#search"><span class="visually-hidden">Поиск</span></a>
               <form class="popup-form" action="https://echo.htmlacademy.ru" method="get" target="_blank">
-                <input id="search-field" class="field" type="text" name="search-string" placeholder="Что ищем?" required>
                 <p class="form-field">
+                  <input id="search-field" class="field" type="text" name="search-string" required>
                   <label for="search-field">Что ищем?</label>
                   <button class="visually-hidden" type="submit">Найти</button>
                 </p>
@@ -52,8 +55,8 @@
               <a class="user-nav-btn" href="#login">Вход</a>
               <form class="popup-form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
                 <p class="form-field">
-                  <label for="login-mail">Электронная почта</label>
                   <input id="login-mail" class="field" type="text" name="login-mail" required>
+                  <label for="login-mail">Электронная почта</label>
                 </p>
                 <p class="form-field">
                   <input id="login-pwd" class="field" type="password" name="login-pwd" autocomplete="off" required>
@@ -81,8 +84,14 @@
       </header>
       <main>
         <div class="container">
+          <h1 class="visually-hidden">Магазин мороженого Глейси</h1>
           <section class="slider">
             <h2 class="visually-hidden">Слайдер</h2>
+            <div class="slider-control">
+                <label for="ice-cream-1" class="slide-label slide-label-1"><span class="visually-hidden">Слайд 1</span></label>
+                <label for="ice-cream-2" class="slide-label slide-label-2"><span class="visually-hidden">Слайд 2</span></label>
+                <label for="ice-cream-3" class="slide-label slide-label-3"><span class="visually-hidden">Слайд 3</span></label>
+            </div>
             <ul class="slides">
               <li class="slide-item slide-1">
                 <img src="img/slide/ice-cream-1.png" width="647" height="584" alt="Крем-брюле и пломбир с малиновым джемом">
@@ -100,14 +109,6 @@
                 <a class="btn" href="#">Давайте оба!</a>
               </li>
             </ul>
-            <div class="slide-controls">
-              <label for="ice-cream-1" class="slide-label slide-label-1"><span class="visually-hidden">Слайд 1</span></label>
-              <input type="radio" class="ice-cream-1 visually-hidden" id="ice-cream-1" name="ice-cream-slide-1" checked>
-              <label for="ice-cream-2" class="slide-label slide-label-2"><span class="visually-hidden">Слайд 2</span></label>
-              <input type="radio" class="ice-cream-2 visually-hidden" id="ice-cream-2" name="ice-cream-slide-2">
-              <label for="ice-cream-3" class="slide-label slide-label-3"><span class="visually-hidden">Слайд 3</span></label>
-              <input type="radio" class="ice-cream-3 visually-hidden" id="ice-cream-3" name="ice-cream-slide-3">
-            </div>
           </section>
           <section class="promotion">
             <h2 class="visually-hidden">Скидочные акции</h2>
@@ -122,9 +123,9 @@
               <a class="btn" href="#">Хочу шоколадки!</a>
             </div>
           </section>
-          <section class="products">
+          <section class="product">
             <ul>
-              <li class="product">
+              <li class="product-item">
                 <img class="product-img" src="img/product/1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                 <!-- TODO make :before for the top-list-img -->
                 <img class="top-list-img" src="img/icon/hit.svg" width="61" height="61" alt="Хит продаж!">
@@ -132,21 +133,21 @@
                 <h3 class="product-link"><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
                 <a class="btn product-btn" href="#">Быстрый просмотр</a>
               </li>
-              <li class="product">
+              <li class="product-item">
                 <img class="product-img" src="img/product/2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
                 <img class="top-list-img" src="img/icon/hit.svg" width="61" height="61" alt="Хит продаж!">
                 <p class="product-price">380&#8202;&#8381;<span> /кг</span></p>
                 <h3 class="product-link"><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
                 <a class="btn" href="#">Быстрый просмотр</a>
               </li>
-              <li class="product">
+              <li class="product-item">
                 <img class="product-img" src="img/product/3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
                 <img class="top-list-img" src="img/icon/hit.svg" width="61" height="61" alt="Хит продаж!">
                 <p class="product-price">355&#8202;&#8381;<span> /кг</span></p>
                 <h3 class="product-link"><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
                 <a class="btn" href="#">Быстрый просмотр</a>
               </li>
-              <li class="product">
+              <li class="product-item">
                 <img class="product-img" src="img/product/4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
                 <img class="top-list-img" src="img/icon/hit.svg" width="61" height="61" alt="Хит продаж!">
                 <p class="product-price">415&#8202;&#8381;<span> /кг</span></p>
@@ -157,7 +158,7 @@
           </section>
           <section class="info">
             <h2 class="visually-hidden">Краткая информация о компании</h2>
-            <p>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
+            <p>Магазин Глейси — это онлайн- и офлайн- магазин по продаже мороженого собственного производства на развес</p>
             <ul>
               <li class="manufacturing-info">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
               <li class="supply-info">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
