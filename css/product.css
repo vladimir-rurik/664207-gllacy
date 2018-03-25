@@ -79,24 +79,16 @@
   font-size: 30px;
 }
 
+.product-price:hover {
+  cursor: pointer;
+}
+
 .product-link {
   margin: 22px 5px 0;
 
   font-weight: 500;
   font-size: 16px;
   text-align: center;
-}
-
-.product-link a {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.product-link a:hover,
-.product-link a:focus,
-.product-link a:active {
-  color: #e84d37;
-
-  border-bottom: 1px solid rgba(236, 89, 60, 0.3);
 }
 
 .product-item .btn {
