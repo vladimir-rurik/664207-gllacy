@@ -1,1 +1,0 @@
-for %f in (_*.css) do type "%f" >> style.css
