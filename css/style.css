@@ -1063,7 +1063,7 @@ input[type="checkbox"].visually-hidden {
   background-color: #e7e2cd;
   background-image: url("../img/background/map.png");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center;
   background-size: cover;
 }
 
@@ -1723,7 +1723,7 @@ input[type="checkbox"].visually-hidden {
   z-index: 100;
 
   display: flex;
-  min-width: 100vh;
+  min-width: 100%;
   min-height: 100vh;
 }
 

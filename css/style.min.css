@@ -840,7 +840,7 @@ input[type=radio].visually-hidden {
 
   background-color: #e7e2cd;
   background-image: url(../img/background/map.png);
-  background-position: center top;
+  background-position: center;
   background-size: cover;
 }.contact-info {
   position: absolute;
@@ -1325,7 +1325,7 @@ input[type=radio].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 100vh;
+  min-width: 100%;
   min-height: 100vh;
 }.modal-feedback form {
   position: fixed;
