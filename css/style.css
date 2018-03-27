@@ -76,9 +76,9 @@ input[type="checkbox"].visually-hidden {
   min-width: 1200px;
 
   background-color: #849d8f;
+  background-image: linear-gradient( #9cb0a5, #849d8f);
   background-repeat: no-repeat;
   background-position: center -164px;
-  background-size: 1045px 1045px;
 }
 
 .background ul {
@@ -879,6 +879,18 @@ input[type="checkbox"].visually-hidden {
   font-weight: 500;
   font-size: 16px;
   text-align: center;
+}
+
+.product-link a {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.product-link a:hover,
+.product-link a:focus,
+.product-link a:active {
+  color: #e84d37;
+
+  border-bottom: 1px solid rgba(236, 89, 60, 0.3);
 }
 
 .product-item .btn {
