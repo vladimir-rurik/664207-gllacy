@@ -76,7 +76,8 @@ input[type="checkbox"].visually-hidden {
   min-width: 1200px;
 
   background-color: #849d8f;
-  background-image: linear-gradient( #9cb0a5, #849d8f);
+  background-image: linear-gradient( #9cb0a5, #849d8f );
+  /* background-image: linear-gradient( #9cb0a5, #849d8f 1045px ); */
   background-repeat: no-repeat;
   background-position: center -164px;
 }
@@ -855,9 +856,13 @@ input[type="checkbox"].visually-hidden {
   left: 0;
 }
 
+.product-price span:before {
+  content: url("../img/icon/ruble.svg");
+}
+
 .product-price {
-  display: block;
   margin: -66px 0 0;
+  padding-right: 16px;
 
   font-weight: bold;
   font-size: 45px;
@@ -866,6 +871,8 @@ input[type="checkbox"].visually-hidden {
 }
 
 .product-price span {
+  padding-left: 4px;
+
   font-size: 30px;
 }
 
@@ -1323,6 +1330,13 @@ input[type="checkbox"].visually-hidden {
 
 .filter .select-block {
   padding: 0;
+}
+
+/* firefox specific fix for the cusomized selector control */
+@-moz-document url-prefix() {
+  .filter .select-block {
+    line-height: 25px;
+  }
 }
 
 .filter-category-options {
