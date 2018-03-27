@@ -76,7 +76,7 @@ input[type="checkbox"].visually-hidden {
   min-width: 1200px;
 
   background-color: #849d8f;
-  background-image: linear-gradient( #9cb0a5, #849d8f );
+  background-image: linear-gradient( #9cb0a5, #849d8f 700px );
   background-repeat: no-repeat;
   /* background-position: center -164px; */
 }
