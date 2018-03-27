@@ -77,9 +77,8 @@ input[type="checkbox"].visually-hidden {
 
   background-color: #849d8f;
   background-image: linear-gradient( #9cb0a5, #849d8f );
-  /* background-image: linear-gradient( #9cb0a5, #849d8f 1045px ); */
   background-repeat: no-repeat;
-  background-position: center -164px;
+  /* background-position: center -164px; */
 }
 
 .background ul {
@@ -226,10 +225,10 @@ input[type="checkbox"].visually-hidden {
 
 .menu-item > a {
   display: inline-block;
-  margin: 9px 14px 0;
+  margin: 6px 14px 0;
   padding-bottom: 3px;
 
-  line-height: 12px;
+  line-height: 18px;
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -240,7 +239,7 @@ input[type="checkbox"].visually-hidden {
 .menu-item-current > a,
 .menu-item:target > a {
   margin: 0;
-  padding: 9px 14px 11px;
+  padding: 6px 14px 11px;
 
   color: #323232;
 
@@ -604,6 +603,8 @@ input[type="checkbox"].visually-hidden {
   rgba(207, 246, 225, 0.38) 310px,
   rgba(207, 246, 225, 0.15) 420px,
   transparent 522px);
+  background-position: center -164px;
+  background-size: 1045px 1045px;
 }
 
 .ice-cream-2:checked ~ .background {
@@ -614,6 +615,8 @@ input[type="checkbox"].visually-hidden {
   rgba(214, 235, 252, 0.38) 310px,
   rgba(214, 235, 252, 0.15) 420px,
   transparent 522px);
+  background-position: center -164px;
+  background-size: 1045px 1045px;
 }
 
 .ice-cream-3:checked ~ .background {
@@ -624,6 +627,8 @@ input[type="checkbox"].visually-hidden {
   rgba(250, 228, 219, 0.38) 310px,
   rgba(250, 228, 219, 0.15) 420px,
   transparent 522px);
+  background-position: center -164px;
+  background-size: 1045px 1045px;
 }
 
 .slider-control {
