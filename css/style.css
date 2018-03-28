@@ -874,7 +874,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .product-price span:before {
-  content: url("../img/icon/ruble.svg");
+  content: url("../img/icon/rouble.svg");
 }
 
 .product-price {
@@ -1521,16 +1521,17 @@ input[type="checkbox"].visually-hidden {
   opacity: 1;
 }
 
-.filter-label:disabled {
-  opacity: 0.4;
-}
-
 .filter-label-radio {
   background-image: url("../img/icon/radio-off.svg");
 }
 
 .filter-radio:checked + .filter-label-radio {
   background-image: url("../img/icon/radio-on.svg");
+}
+
+.filter-radio:disabled + .filter-label-check,
+.filter-radio:disabled + .filter-label-radio {
+  opacity: 0.5;
 }
 
 .filter-label-check {
