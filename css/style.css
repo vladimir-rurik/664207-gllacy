@@ -6,7 +6,8 @@
   font-style: normal;
 
   src: local("Roboto"), local("Roboto-Regular"),
-  url("../font/roboto.woff2") format("woff2");
+  url("../font/roboto.woff2") format("woff2"),
+  url("../font/roboto.woff2") format("woff");
 }
 
 @font-face {
@@ -15,7 +16,8 @@
   font-style: normal;
 
   src: local("Roboto Medium"), local("Roboto-Medium"),
-  url("../font/robotomedium.woff2") format("woff2");
+  url("../font/robotomedium.woff2") format("woff2"),
+  url("../font/robotomedium.woff2") format("woff");
 }
 
 @font-face {
@@ -24,7 +26,8 @@
   font-style: normal;
 
   src: local("Roboto Bold"), local("Roboto-Bold"),
-  url("../font/robotobold.woff2") format("woff2");
+  url("../font/robotobold.woff2") format("woff2"),
+  url("../font/robotobold.woff2") format("woff");
 }
 
 *,
