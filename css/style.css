@@ -682,6 +682,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .slide-label:focus,
+.slide-label:active,
 .ice-cream-1:checked ~ .background .slide-label-1::before,
 .ice-cream-2:checked ~ .background .slide-label-2::before,
 .ice-cream-3:checked ~ .background .slide-label-3::before {
@@ -922,8 +923,9 @@ input[type="checkbox"].visually-hidden {
 
 .product-item .btn {
   position: absolute;
+  right: 12.5%;
   bottom: 10px;
-  left: 33px;
+  left: 12.5%;
   z-index: 1;
 
   padding: 8px 16px 12px;
@@ -941,9 +943,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .product-item:not(:hover) .btn:focus {
-  bottom: 150px;
-
-  opacity: 1;
+  display: none;
 }
 
 /* info, news, contract */
