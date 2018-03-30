@@ -1,5 +1,5 @@
 
-// var Gllacy = Gllacy || {}; //Gllacy namespace
+ var Gllacy = Gllacy || {}; //Gllacy namespace
 
 // yandex map
 var mapContainer = document.querySelector('#map');
