@@ -31,7 +31,7 @@
             <li class="menu-item"><a href="#">О Компании</a></li>
           </ul>
           <ul class="user-nav">
-            <li class="user-nav-item search-form">
+            <li id="search" class="user-nav-item search-form">
               <a class="user-nav-btn" href="#search"><span class="visually-hidden">Поиск</span></a>
               <form class="popup-form" action="https://echo.htmlacademy.ru" method="get" target="_blank">
                 <p class="form-field">
@@ -41,7 +41,7 @@
                 </p>
               </form>
             </li>
-            <li class="user-nav-item login-form">
+            <li id="login" class="user-nav-item login-form">
               <a class="user-nav-btn" href="#login">Вход</a>
               <form class="popup-form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
                 <p class="form-field">
@@ -61,7 +61,7 @@
                 </div>
               </form>
             </li>
-            <li class="user-nav-item shopping-cart-nav">
+            <li id="shopping-cart" class="user-nav-item shopping-cart-nav">
               <span class="visually-hidden">Корзина</span>
               <a class="user-nav-btn no-href">Пусто</a>
             </li>
@@ -215,15 +215,15 @@
         <form action="https://echo.htmlacademy.ru" method="post" target="_blank">
           <h2>Мы обязательно вам ответим!</h2>
           <p class="form-field">
-            <input id="feedback-name" class="field" type="text" name="feedback-name" required>
+            <input id="feedback-name" class="feedback-field field" type="text" name="feedback-name" required>
             <label for="feedback-name">Как вас зовут?</label>
           </p>
           <p class="form-field">
-            <input id="feedback-mail" class="field" type="text" name="feedback-mail" required>
+            <input id="feedback-mail" class="feedback-field field" type="text" name="feedback-mail" required>
             <label for="feedback-mail">Ваша почта для ответа?</label>
           </p>
           <p class="form-field textarea-group">
-            <textarea id="feedback-text" class="field" name="feedback-text" required></textarea>
+            <textarea id="feedback-text" class="feedback-field field" name="feedback-text" required></textarea>
             <label for="feedback-text">Напишите что-нибудь…</label>
           </p>
           <button class="btn" type="submit">Отправить</button>
@@ -231,8 +231,8 @@
         </form>
       </section>
     </div>
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
 
