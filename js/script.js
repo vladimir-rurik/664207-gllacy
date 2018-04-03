@@ -303,6 +303,15 @@
       var targetForm =  targetElement.closest('form');
       var requiredInputs = targetForm.querySelectorAll('[required]')
 
+      // ESC event handler: close the current open modal form
+      targetForm.addEventListener('keydown', function(evt) {
+        if (evt.keyCode === 27) {
+          if (targetForm.classList.contains('js-modal-error')) {
+            targetForm.classList.remove('js-modal-error');
+          }
+        }
+      });
+
       for (var i = 0; i < requiredInputs.length; i++) {
         // if empty
         if (requiredInputs[i].value === '') {
