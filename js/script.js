@@ -299,28 +299,17 @@
 
     submitButtons[i].addEventListener('click', function (evt) {
 
-      var targetElement = evt.target || evt. srcElement;
+      var targetElement = evt.target || evt.srcElement;
       var targetForm =  targetElement.closest('form');
       var requiredInputs = targetForm.querySelectorAll('[required]')
 
-      // ESC event handler: close the current open modal form
-      targetForm.addEventListener('keydown', function(evt) {
-        if (evt.keyCode === 27) {
-          if (targetForm.classList.contains('js-modal-error')) {
-            targetForm.classList.remove('js-modal-error');
-          }
-        }
-      });
-
       for (var i = 0; i < requiredInputs.length; i++) {
-        // if empty
+        // if it is empty
         if (requiredInputs[i].value === '') {
-          if (targetForm.classList.contains('js-modal-error')) {
-            targetForm.classList.remove('js-modal-error');
-          }
+          targetForm.classList.add('js-modal-error');
           setTimeout(function() {
-            targetForm.classList.add('js-modal-error');
-          }, 100 );
+            targetForm.classList.remove('js-modal-error');
+          }, 300 );
           return true;
         }
       }
