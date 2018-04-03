@@ -294,7 +294,7 @@
   });
 
   // the event handler on clicking a submit button to check the emptyness of a field.
-  var submitButtons = document.querySelectorAll('button[type="submit"]');
+  var submitButtons = document.querySelectorAll('[type="submit"]');
   for (var i = 0; i < submitButtons.length; i++) {
 
     submitButtons[i].addEventListener('click', function (evt) {

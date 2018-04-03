@@ -203,23 +203,15 @@ input[type="checkbox"].visually-hidden {
   border: none;
   border-radius: 5px;
   outline: none;
-  box-shadow: inset 0 0 0 1px rgb(211, 211, 210);
-}
-
-/* IE specific */
-@media all and (-ms-high-contrast:none) {
-  *::-ms-backdrop,
-  .field {
-    border-radius: 2px;
-  } /* IE 11 */
+  box-shadow: 0 0 0 1px rgb(211, 211, 210);
 }
 
 .field:hover {
-  box-shadow: inset 0 0 0 2px #999999;
+  box-shadow: 0 0 0 2px #999999;
 }
 
 .field:focus {
-  box-shadow: inset 0 0 0 2px #5b9ddf;
+  box-shadow: 0 0 0 2px #5b9ddf;
 }
 
 .field + label {
@@ -245,6 +237,21 @@ input[type="checkbox"].visually-hidden {
   font-size: 11px;
   line-height: 11px;
 }
+
+/* IE specific */
+@media all and (-ms-high-contrast:none) {
+  .field {
+    top: 4px;
+  }
+  .field + label {
+    top: 11px;
+  }
+  .field:focus + label,
+  :required:valid.field + label {
+    top: -10px;
+  }
+}
+
 
 /* header */
 
