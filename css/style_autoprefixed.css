@@ -44,16 +44,16 @@
   50%,
   70%,
   90% {
-    -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
+    -webkit-transform: translateX(-3%);
+            transform: translateX(-3%);
   }
 
   20%,
   40%,
   60%,
   80% {
-    -webkit-transform: translateX(10px);
-            transform: translateX(10px);
+    -webkit-transform: translateX(3%);
+            transform: translateX(3%);
   }
 }
 
@@ -69,16 +69,16 @@
   50%,
   70%,
   90% {
-    -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
+    -webkit-transform: translateX(-3%);
+            transform: translateX(-3%);
   }
 
   20%,
   40%,
   60%,
   80% {
-    -webkit-transform: translateX(10px);
-            transform: translateX(10px);
+    -webkit-transform: translateX(3%);
+            transform: translateX(3%);
   }
 }
 
@@ -276,18 +276,18 @@ input[type="checkbox"].visually-hidden {
   border: none;
   border-radius: 5px;
   outline: none;
-  -webkit-box-shadow: inset 0 0 0 1px rgb(211, 211, 210);
-          box-shadow: inset 0 0 0 1px rgb(211, 211, 210);
+  -webkit-box-shadow: 0 0 0 1px rgb(211, 211, 210);
+          box-shadow: 0 0 0 1px rgb(211, 211, 210);
 }
 
 .field:hover {
-  -webkit-box-shadow: inset 0 0 0 2px #999999;
-          box-shadow: inset 0 0 0 2px #999999;
+  -webkit-box-shadow: 0 0 0 2px #999999;
+          box-shadow: 0 0 0 2px #999999;
 }
 
 .field:focus {
-  -webkit-box-shadow: inset 0 0 0 2px #5b9ddf;
-          box-shadow: inset 0 0 0 2px #5b9ddf;
+  -webkit-box-shadow: 0 0 0 2px #5b9ddf;
+          box-shadow: 0 0 0 2px #5b9ddf;
 }
 
 .field + label {
@@ -313,6 +313,21 @@ input[type="checkbox"].visually-hidden {
   font-size: 11px;
   line-height: 11px;
 }
+
+/* IE specific */
+@media all and (-ms-high-contrast:none) {
+  .field {
+    top: 4px;
+  }
+  .field + label {
+    top: 11px;
+  }
+  .field:focus + label,
+  :required:valid.field + label {
+    top: -10px;
+  }
+}
+
 
 /* header */
 
@@ -645,8 +660,7 @@ input[type="checkbox"].visually-hidden {
   padding: 20px 17px;
 }
 
-.login-form:hover .popup-form,
-.popup-form.js-modal-error {
+.login-form:hover .popup-form {
   z-index: 100;
 
   display: block;
@@ -672,11 +686,12 @@ input[type="checkbox"].visually-hidden {
 
 .login-service-links a {
   display: inline;
-  margin-left: 13%;
+  margin-left: 12%;
 
   font-size: 13px;
   line-height: 24px;
   color: #323232;
+  white-space: nowrap;
 
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
@@ -1089,7 +1104,9 @@ input[type="checkbox"].visually-hidden {
   width: 31px;
   height: 32px;
 
-  background: url(../img/icon/rouble.svg);
+  vertical-align: baseline;
+
+  background: url("../img/icon/rouble.svg");
 }
 
 .product-price {
@@ -1650,6 +1667,7 @@ input[type="checkbox"].visually-hidden {
   overflow: hidden;
 
   font: inherit;
+  line-height: 18px;
   color: #ffffff;
      text-overflow: ellipsis;
 
@@ -1692,8 +1710,8 @@ input[type="checkbox"].visually-hidden {
 .filter-category-options option {
   padding-top: 10px;
 
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 14px;
+  line-height: 16px;
   color: #323232;
 }
 
@@ -2093,18 +2111,17 @@ input[type="checkbox"].visually-hidden {
 
 .modal-feedback form {
   position: fixed;
-  top: 50%;
-  left: 50%;
+  top: 25%;
+  left: 35%;
 
   min-width: 475px;
   padding: 16px 25px 27px;
 
   background-color: #f8f7f4;
   border-radius: 10px;
-  -webkit-transform: translate( -50%, -50%);
-      -ms-transform: translate( -50%, -50%);
-          transform: translate( -50%, -50%);
+}
 
+.modal-feedback:not(.js-modal-error) {
   -webkit-animation: bounce 0.6s;
           animation: bounce 0.6s;
 }
