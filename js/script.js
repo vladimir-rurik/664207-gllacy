@@ -293,4 +293,30 @@
     feedbackContainer.classList.remove('js-modal');
   });
 
+  // the event handler on clicking a submit button to check the emptyness of a field.
+  var submitButtons = document.querySelectorAll('button[type="submit"]');
+  for (var i = 0; i < submitButtons.length; i++) {
+
+    submitButtons[i].addEventListener('click', function (evt) {
+
+      var targetElement = evt.target || evt. srcElement;
+      var targetForm =  targetElement.closest('form');
+      var requiredInputs = targetForm.querySelectorAll('[required]')
+
+      for (var i = 0; i < requiredInputs.length; i++) {
+        // if empty
+        if (requiredInputs[i].value === '') {
+          if (targetForm.classList.contains('js-modal-error')) {
+            targetForm.classList.remove('js-modal-error');
+          }
+          setTimeout(function() {
+            targetForm.classList.add('js-modal-error');
+          }, 100 );
+          return true;
+        }
+      }
+    });
+  }
+
 })();
+
