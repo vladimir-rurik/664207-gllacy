@@ -308,7 +308,7 @@ input[type="checkbox"].visually-hidden {
 .menu-item-current > a,
 .menu-item:target > a {
   margin: 0;
-  padding: 6px 14px 11px;
+  padding: 6px 14px 8px;
 
   color: #323232;
 
